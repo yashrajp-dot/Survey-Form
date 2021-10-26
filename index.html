@@ -1,0 +1,75 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <header>
+<h1 id="title">Tesla Model Purchase</h1>
+  </header>
+  <body>
+<p id="description">Fill the details below to complete your Tesla Purchase.</p>
+<br>
+<form id="survey-form">
+
+<div class="input-headings">
+
+  <label for="name" id="name-label"> Name </label>
+  <input type="text" name="name" id="name" placeholder="Elon Musk" required class="form-inputs"></input>
+  <br>
+  <label for="email" id="email-label"> Email </label>
+  <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required class="form-inputs required">
+  <br>
+
+  <label for="number" id="number-label">Age</label>
+  <input id="number" type="number" name="number" placeholder="18" min="10" max="100" required class="form-inputs"></input>
+  <br>
+  <br>
+  <label for="dropdown" id="model">Select Model</label>
+
+  <select name="" id="dropdown">
+    <option value="Model A">Model A</option>
+    <option value="Model B">Model B</option>
+    <option value="Model C">Model C</option>
+    <option value="Model D">Model D</option>
+    <option value="Model E">Model E</option>
+  </select>
+  <br>
+  <br>
+  <label for="model_color" id="model_color"> <b>Model Color</b> </label>
+  <br>
+  <input type="radio" id="black" name="color" value="black">
+  <label for="model_color">Black</label>
+  <br>
+  <input type="radio" id="white" name="color" value="white">
+  <label for="model_color">White</label>
+  <br>
+  <input type="radio" id="green" name="color" value="green">
+  <label for="model_color">Green</label>
+  <br>
+  <br>
+  <label for="features"> <b>Add Features: </b></label>
+  <br>
+  <input type="checkbox" id="checkbox" name="features" value="autopilot">
+  <label for="checkbox">Full Self-driving (Autopilot) = $10,000</label>
+  <br>
+  <input type="checkbox" id="checkbox" name="features" value="battery">
+  <label for="checkbox">Increased Battery life = $9,000</label>
+  <br>
+  <input type="checkbox" id="checkbox" name="features" value="dual_motor">
+  <label for="checkbox">Dual motor (All wheel driving) = $12,000</label>
+  <br>
+  <br>
+
+  <label for="textarea">Additional Comments</label>
+  <br>
+  <textarea id="textarea" name="instructions" id="" cols="55" rows="5"></textarea>
+  <br>
+
+  <input type="submit" id="submit" placeholder="place ordr" class="submit-button">
+</div>
+</form>
+  
+</body>
+</html>
